@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff9966, #ff5e62);
+            color: white;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 5%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            transition: all 0.3s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 26px;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: 0.3s;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #ffeb3b;
+            transform: scale(1.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: left;
+            padding: 0 10%;
+            flex-wrap: wrap;
+            position: relative;
+            margin-top: 60px; /* To avoid overlap with fixed header */
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            color: white;
+        }
+
+        .hero-text h1 span {
+            display: inline-block;
+            animation: wave 1s infinite;
+        }
+
+        @keyframes wave {
+            0%, 100% { transform: rotate(0); }
+            50% { transform: rotate(15deg); }
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .hero img {
+            width: 40%;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .buttons a {
+            padding: 12px 20px;
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+            background: #ffeb3b;
+            border-radius: 10px;
+            font-weight: bold;
+            display: inline-block;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: 0.3s ease-in-out;
+        }
+
+        .buttons a:hover {
+            background: #ff4081;
+            transform: scale(1.1);
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+            object-fit: contain;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+
+        section {
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        #skills, #projects, #contact {
+            margin-top: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 60px 10%;
+            box-shadow: 0px 0 0px rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        h2 {
+            color: #ffeb3b;
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+            color: white;
+        }
+
+        #contact a {
+            color: #ffeb3b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #contact a:hover {
+            color: #ff4081;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>&lt;ANURAG YADAV &gt;</h1>
+        <nav>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hi all, I'm ANURAG<span>👋</span></h1>
+            <p>A passionate Full Stack Developer 🚀 experienced in JavaScript, React, and more.</p>
+            <div class="buttons">
+                <a href="#contact">Contact</a>
+                <a href="CV.pdf" target="_blank">View My Resume</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/skills/github-pages" target="_blank"><img src="https://pngimg.com/uploads/github/github_PNG80.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/anurag-yadav-521b80325/?trk=PROFILE_DROP_DOWN" target="_blank"><img src="https://tse2.mm.bing.net/th?id=OIP.SL2Gf-U_ixigPGDa-r4JQwHaHa&pid=Api&P=0&h=180" alt="LinkedIn"></a>
+                <a href="mailto:anurag.yadav_cs23@gla.ac.in"><img src="https://tse1.mm.bing.net/th?id=OIP.TW21b-CFGudjWw39HNhqcgHaEK&pid=Api&P=0&h=180" alt="Gmail"></a>
+            </div>
+        </div>
+        <img src="m.png" alt="Hero Illustration">
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <p>⚡ Full Stack Development</p>
+        <p>⚡ JavaScript, Python, Java, C</p>
+        <p>⚡ HTML, CSS, Bootstrap</p>
+        <p>⚡ Database: MySQL</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+    
+        <div class="project">
+            <h3>Pharmacy Management System (<span style="color: #ffeb3b;">PharmaTrack</span>)</h3>
+            <p><strong>College Project | March 2024</strong></p>
+            <ul>
+                <li>Created a GUI-based software named <strong>“Pharma Track”</strong> to manage records of drugs in a pharmacy.</li>
+                <li>Integrated an SQL database for all the records.</li>
+            </ul>
+        </div>
+    
+        <div class="project">
+            <h3>Library Management System (<span style="color: #ffeb3b;">BookBase</span>)</h3>
+            <p><strong>Self | September 2023</strong></p>
+            <ul>
+                <li>Built a Library Management System named <strong>“Book Base”</strong> for a school library.</li>
+                <li>Integrated an SQL database to store and retrieve all the data.</li>
+            </ul>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:anurag.yadav_cs23@gla.ac.in">anurag.yadav_cs23@gla.ac.in</a></p>
+        <p>Phone: <a href="tel:+918449658644">+91 8449658644</a></p>
+    </section>
+</body>
+</html>
